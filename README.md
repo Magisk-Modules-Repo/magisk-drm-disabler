@@ -6,4 +6,4 @@
 A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics.
 
 ## LOOKING FOR TESTERS!
-If you're interested in helping the project by being a tester, please refer to [CONTRIBUTING.md](./blob/master/CONTRIBUTING.md)
+If you're interested in helping the project by being a tester, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
