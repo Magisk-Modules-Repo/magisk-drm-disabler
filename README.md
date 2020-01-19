@@ -5,7 +5,7 @@
 
 A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics.
 
-### [Grab the newest release here](../releases)
+### Grab the newest release on [GitLab](https://gitlab.com/Atrate/magisk-drm-disabler/releases) or [GitHub](https://github.com/Atrate/magisk-drm-disabler/releases)
 
 ### Installation
 1. Download the module
