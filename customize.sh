@@ -1,9 +1,13 @@
 REPLACE="
 /system/etc/drm
+/system/lib/drm
+/system/lib64/drm
 /data/drm
 /data/mediadrm
 /data/vendor/mediadrm
 /data/data/.drm
 /data/.dcmdrm
 /efs/drm
+/persist/drm
+/presist-lg/lgdrm
 "
