@@ -1,4 +1,9 @@
 REPLACE="
 /system/etc/drm
-/system/etc/dcmdrm
+/data/drm
+/data/mediadrm
+/data/vendor/mediadrm
+/data/data/.drm
+/data/.dcmdrm
+/efs/drm
 "
