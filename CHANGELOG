@@ -1,3 +1,9 @@
+v0.0.2
+Alpha release -- use at your own responsibility
+Added a few more directories to remove
+
+---
+
 v0.0.1
 Initial alpha release -- use at your own responsibility
 Disables liboemcrypto, mediadrmserver, drmserver and vendor hw drm services

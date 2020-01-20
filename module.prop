@@ -1,7 +1,7 @@
 id=magisk-drm-disabler
 name=Magisk DRM Disabler
-version=v0.0.1
-versionCode=1
+version=v0.0.2
+versionCode=2
 author=Atrate
 description=Magisk Module aiming to eliminate DRM from Android systemlessly.
 support=https://gitlab.com/Atrate/magisk-drm-disabler

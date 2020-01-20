@@ -23,5 +23,8 @@ If you're interested in helping the project by being a tester, please refer to [
 ## Credits
 topjohnwu for magisk
 
+## [Changelog](./CHANGELOG)
+
 ## License
 This project is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
+
