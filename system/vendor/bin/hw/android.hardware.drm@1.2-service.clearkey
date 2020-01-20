@@ -1,5 +1,6 @@
 #!/bin/sh
-echo "drmserver has been succesfully replaced. This script will hang forever so it is not launched again."
+# This binary has been succesfully replaced. This script will hang 
+# forever so it is not launched again.
 # Using a loop instead of sleep infinity due to the built-in Android
 # sleep command not supporting infinity as an argument and requiring
 # busybox adds complexity to the script.
