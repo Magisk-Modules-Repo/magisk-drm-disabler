@@ -14,7 +14,7 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 
 ---
 
-### THIS IS NOT AN APP THAT WILL HELP YOU BYPASS DRM PROTECTION
+### THIS IS NOT A MODULE THAT WILL HELP YOU BYPASS DRM PROTECTION
 Quite the contrary, it will make you unable to watch any DRM-restricted content.
 
 ### This is an alpha release
