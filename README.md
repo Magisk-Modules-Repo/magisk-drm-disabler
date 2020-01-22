@@ -4,7 +4,7 @@ If you're on GitHub and want to create a Pull/Merge Request, head to this projec
 
 ## Description
 
-A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics.
+A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics (see: [Opposing Digital Rights Mismanagement](https://www.gnu.org/philosophy/opposing-drm.en.html) and [Examples of proprietary DRM](https://www.gnu.org/proprietary/proprietary-drm.en.html)).
 
 ## Installation
 1. Download the module from the releases
@@ -14,7 +14,10 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 
 ---
 
-### THIS IS AN ALPHA RELEASE
+### THIS IS NOT AN APP THAT WILL HELP YOU BYPASS DRM PROTECTION
+Quite the contrary, it will make you unable to watch any DRM-restricted content.
+
+### This is an alpha release
 I am not responsible for any damage done to your device by this module, so flash at your of discretion
 
 ### LOOKING FOR TESTERS!
