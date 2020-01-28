@@ -29,5 +29,5 @@ topjohnwu for magisk
 ## [Changelog](./CHANGELOG)
 
 ## License
-This project is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).
+This project is licensed under the [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html).
 
