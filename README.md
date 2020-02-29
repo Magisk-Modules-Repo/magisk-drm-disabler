@@ -6,6 +6,40 @@ If you're on GitHub and want to create a Pull/Merge Request, head to this projec
 
 A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics (see: [Opposing Digital Rights Mismanagement](https://www.gnu.org/philosophy/opposing-drm.en.html) and [Examples of proprietary DRM](https://www.gnu.org/proprietary/proprietary-drm.en.html)).
 
+**List of replaced files:**
+```
+system
+├── system/bin
+│   ├── system/bin/drmserver
+│   └── system/bin/mediadrmserver
+└── system/vendor
+    ├── system/vendor/bin
+    │   └── system/vendor/bin/hw
+    │       ├── system/vendor/bin/hw/android.hardware.drm@1.0-service
+    │       ├── system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine
+    │       ├── system/vendor/bin/hw/android.hardware.drm@1.1-service.clearkey
+    │       ├── system/vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+    │       ├── system/vendor/bin/hw/android.hardware.drm@1.2-service.clearkey
+    │       └── system/vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+    └── system/vendor/lib
+        └── system/vendor/lib/liboemcrypto.so
+```
+
+**List of replaced directories:**
+```
+/system/etc/drm
+/system/lib/drm
+/system/lib64/drm
+/data/drm
+/data/mediadrm
+/data/vendor/mediadrm
+/data/data/.drm
+/data/.dcmdrm
+/efs/drm
+/persist/drm
+/persist-lg/lgdrm
+```
+
 ## Installation
 1. Download the module from the releases
 2. Flash the module through Magisk Manager or TWRP/OrangeFox
