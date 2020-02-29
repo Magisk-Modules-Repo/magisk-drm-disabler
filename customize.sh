@@ -9,5 +9,5 @@ REPLACE="
 /data/.dcmdrm
 /efs/drm
 /persist/drm
-/presist-lg/lgdrm
+/persist-lg/lgdrm
 "
