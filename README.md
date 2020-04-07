@@ -6,7 +6,7 @@ If you're on GitHub and want to create a Pull/Merge Request, head to this projec
 
 A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics (see: [Opposing Digital Rights Mismanagement](https://www.gnu.org/philosophy/opposing-drm.en.html) and [Examples of proprietary DRM](https://www.gnu.org/proprietary/proprietary-drm.en.html)).
 
-(XDA Support thread)[https://forum.xda-developers.com/apps/magisk/module-magisk-drm-disabler-t4070117]
+[XDA Support thread](https://forum.xda-developers.com/apps/magisk/module-magisk-drm-disabler-t4070117)
 
 **List of replaced files:**
 ```
