@@ -43,10 +43,14 @@ system
 ```
 
 ## Installation
+1. Install through Magisk Manager 
+
+OR
+
 1. Download the module from the releases
 2. Flash the module through Magisk Manager or TWRP/OrangeFox
 
-### Grab the newest release on [GitLab](https://gitlab.com/Atrate/magisk-drm-disabler/releases) or [GitHub](https://github.com/Atrate/magisk-drm-disabler/releases)
+### Grab the newest release on [GitLab](https://gitlab.com/Atrate/magisk-drm-disabler/releases) or [GitHub](https://github.com/Magisk-Modules-Repo/magisk-drm-disabler/releases)
 
 ---
 
