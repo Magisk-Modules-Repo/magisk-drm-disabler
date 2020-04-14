@@ -1,3 +1,10 @@
+v0.1.0
+Beta release -- use at your own responsibility
+Added more directories and files for removal
+Removed binary DRM blobs (from some manufacturers, such as LG)
+
+---
+
 v0.0.2
 Alpha release -- use at your own responsibility
 Added a few more directories to remove

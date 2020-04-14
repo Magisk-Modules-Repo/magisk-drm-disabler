@@ -11,21 +11,50 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 **List of replaced files:**
 ```
 system
-├── system/bin
-│   ├── system/bin/drmserver
-│   └── system/bin/mediadrmserver
-└── system/vendor
-    ├── system/vendor/bin
-    │   └── system/vendor/bin/hw
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.0-service
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.1-service.clearkey
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.2-service.clearkey
-    │       └── system/vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-    └── system/vendor/lib
-        └── system/vendor/lib/liboemcrypto.so
+├── bin/
+│   ├── drmserver*
+│   └── mediadrmserver*
+└── vendor/
+    ├── bin/
+    │   └── hw/
+    │       ├── android.hardware.drm@1.0-service*
+    │       ├── android.hardware.drm@1.0-service.widevine*
+    │       ├── android.hardware.drm@1.1-service.clearkey*
+    │       ├── android.hardware.drm@1.1-service.widevine*
+    │       ├── android.hardware.drm@1.2-service.clearkey*
+    │       └── android.hardware.drm@1.2-service.widevine*
+    ├── etc/
+    │   └── init/
+    │       ├── android.hardware.drm@1.0-service.rc*
+    │       ├── android.hardware.drm@1.0-service.widevine.rc*
+    │       ├── android.hardware.drm@1.1-service.clearkey.rc*
+    │       ├── android.hardware.drm@1.1-service.widevine.rc*
+    │       ├── android.hardware.drm@1.2-service.clearkey.rc*
+    │       └── android.hardware.drm@1.2-service.widevine.rc*
+    └── lib/
+        └── liboemcrypto.so
+
+firmware
+└── image/
+    ├── widevine.b01*
+    ├── widevine.b02*
+    ├── widevine.b03*
+    ├── widevine.b04*
+    ├── widevine.b05*
+    ├── widevine.b06*
+    └── widevine.mdt*
+
+persist-lg
+└── firmware/
+    ├── widevine.b01*
+    ├── widevine.b02*
+    ├── widevine.b03*
+    ├── widevine.b04*
+    ├── widevine.b05*
+    ├── widevine.b06*
+    └── widevine.mdt*
 ```
+Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until a workaround is found. They still appear in the list so that users can remove them by themselves, although this is risky.
 
 **List of replaced directories:**
 ```
@@ -40,6 +69,8 @@ system
 /efs/drm
 /persist/drm
 /persist-lg/lgdrm
+/persist-lg/widevine
+/persist-lg/data/widevine
 ```
 
 ## Installation

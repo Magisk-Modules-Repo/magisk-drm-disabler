@@ -10,4 +10,6 @@ REPLACE="
 /efs/drm
 /persist/drm
 /persist-lg/lgdrm
+/persist-lg/widevine
+/persist-lg/data/widevine
 "
