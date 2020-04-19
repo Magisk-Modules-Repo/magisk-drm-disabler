@@ -13,6 +13,7 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 system
 ├── bin/
 │   ├── drmserver*
+│   ├── lgdrmserver*
 │   └── mediadrmserver*
 └── vendor/
     ├── bin/
