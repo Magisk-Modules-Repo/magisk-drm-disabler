@@ -58,6 +58,7 @@ Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until 
 
 **List of replaced directories:**
 ```
+/system/app/LGDrm
 /system/etc/drm
 /system/lib/drm
 /system/lib64/drm

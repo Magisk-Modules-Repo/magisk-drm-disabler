@@ -1,4 +1,5 @@
 REPLACE="
+/system/app/LGDrm
 /system/etc/drm
 /system/lib/drm
 /system/lib64/drm
