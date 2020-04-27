@@ -23,7 +23,8 @@ system
     │       ├── android.hardware.drm@1.1-service.clearkey*
     │       ├── android.hardware.drm@1.1-service.widevine*
     │       ├── android.hardware.drm@1.2-service.clearkey*
-    │       └── android.hardware.drm@1.2-service.widevine*
+    │       ├── android.hardware.drm@1.2-service.widevine*
+    │       └──vendor.oneplus.hardware.drmkey@1.0-service*
     ├── etc/
     │   └── init/
     │       ├── android.hardware.drm@1.0-service.rc*
