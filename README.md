@@ -11,29 +11,33 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 **List of replaced files:**
 ```
 system
-├── bin/
-│   ├── drmserver*
-│   ├── lgdrmserver*
-│   └── mediadrmserver*
-└── vendor/
-    ├── bin/
-    │   └── hw/
-    │       ├── android.hardware.drm@1.0-service*
-    │       ├── android.hardware.drm@1.0-service.widevine*
-    │       ├── android.hardware.drm@1.1-service.clearkey*
-    │       ├── android.hardware.drm@1.1-service.widevine*
-    │       ├── android.hardware.drm@1.2-service.clearkey*
-    │       ├── android.hardware.drm@1.2-service.widevine*
-    │       └──vendor.oneplus.hardware.drmkey@1.0-service*
-    ├── etc/
-    │   └── init/
-    │       ├── android.hardware.drm@1.0-service.rc*
-    │       ├── android.hardware.drm@1.0-service.widevine.rc*
-    │       ├── android.hardware.drm@1.1-service.clearkey.rc*
-    │       ├── android.hardware.drm@1.1-service.widevine.rc*
-    │       ├── android.hardware.drm@1.2-service.clearkey.rc*
-    │       └── android.hardware.drm@1.2-service.widevine.rc*
-    └── lib/
+├── bin
+│   ├── drmserver
+│   ├── lgdrmserver
+│   └── mediadrmserver
+├── etc
+├── init
+│   ├── drmserver.rc
+│   └── mediardmserver.rc
+└── vendor
+    ├── bin
+    │   └── hw
+    │       ├── android.hardware.drm@1.0-service
+    │       ├── android.hardware.drm@1.0-service.widevine
+    │       ├── android.hardware.drm@1.1-service.clearkey
+    │       ├── android.hardware.drm@1.1-service.widevine
+    │       ├── android.hardware.drm@1.2-service.clearkey
+    │       ├── android.hardware.drm@1.2-service.widevine
+    │       └── vendor.oneplus.hardware.drmkey@1.0-service
+    ├── etc
+    │   └── init
+    │       ├── android.hardware.drm@1.0-service.rc
+    │       ├── android.hardware.drm@1.0-service.widevine.rc
+    │       ├── android.hardware.drm@1.1-service.clearkey.rc
+    │       ├── android.hardware.drm@1.1-service.widevine.rc
+    │       ├── android.hardware.drm@1.2-service.clearkey.rc
+    │       └── android.hardware.drm@1.2-service.widevine.rc
+    └── lib
         └── liboemcrypto.so
 
 firmware
