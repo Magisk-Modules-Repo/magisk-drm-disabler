@@ -1,3 +1,10 @@
+v0.2.0
+Beta release -- use at your own responsibility
+Added some .rc files and a vendor-specific DRM service
+Fixed sound not working on some devices — removed /vendor/etc/init DRM .rc files
+
+---
+
 v0.1.0
 Beta release -- use at your own responsibility
 Added more directories and files for removal
