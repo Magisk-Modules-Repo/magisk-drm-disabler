@@ -16,9 +16,9 @@ system
 │   ├── lgdrmserver
 │   └── mediadrmserver
 ├── etc
-├── init
-│   ├── drmserver.rc
-│   └── mediardmserver.rc
+│   └── init
+│       ├── drmserver.rc
+│       └── mediardmserver.rc
 └── vendor
     ├── bin
     │   └── hw
@@ -29,14 +29,6 @@ system
     │       ├── android.hardware.drm@1.2-service.clearkey
     │       ├── android.hardware.drm@1.2-service.widevine
     │       └── vendor.oneplus.hardware.drmkey@1.0-service
-    ├── etc
-    │   └── init
-    │       ├── android.hardware.drm@1.0-service.rc
-    │       ├── android.hardware.drm@1.0-service.widevine.rc
-    │       ├── android.hardware.drm@1.1-service.clearkey.rc
-    │       ├── android.hardware.drm@1.1-service.widevine.rc
-    │       ├── android.hardware.drm@1.2-service.clearkey.rc
-    │       └── android.hardware.drm@1.2-service.widevine.rc
     └── lib
         └── liboemcrypto.so
 
