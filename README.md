@@ -19,6 +19,10 @@ system
 │   └── init
 │       ├── drmserver.rc
 │       └── mediardmserver.rc
+├── lib
+│   └── libdrmframework_jni.so
+├── lib64
+│   └── libdrmframework_jni.so
 └── vendor
     ├── bin
     │   └── hw
