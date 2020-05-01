@@ -16,9 +16,10 @@ system
 │   ├── lgdrmserver
 │   └── mediadrmserver
 ├── etc
-│   └── init
-│       ├── drmserver.rc
-│       └── mediardmserver.rc
+│   ├── init
+│   │   ├── drmserver.rc
+│   │   └── mediardmserver.rc
+│   └── move_widevine_data.sh
 ├── lib
 │   └── libdrmframework_jni.so
 ├── lib64
