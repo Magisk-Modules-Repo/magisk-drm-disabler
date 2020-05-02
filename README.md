@@ -92,7 +92,7 @@ OR
 ### THIS IS NOT A MODULE THAT WILL HELP YOU BYPASS DRM PROTECTION
 Quite the contrary, it will make you unable to watch any DRM-restricted content.
 
-### This is an alpha release
+### This is a beta release
 I am not responsible for any damage done to your device by this module, so flash at your of discretion
 
 ### LOOKING FOR TESTERS!
