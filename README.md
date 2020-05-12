@@ -2,6 +2,10 @@
 
 If you're on GitHub and want to create a Pull/Merge Request, head to this project's [GitLab repo.](https://gitlab.com/Atrate/magisk-drm-disabler/)
 
+## READ THIS FIRST
+
+Some (quite a few) users have reported various breakages due to this module. It is not really possible to fix them, since it seems that DRM might be integrated to tightly into some ROMs. You have been warned.
+
 ## Description
 
 A Magisk module designed to disable DRM (Digital Restrictions Management) completely on Android devices using Magisk, for reasons of security or ethics (see: [Opposing Digital Rights Mismanagement](https://www.gnu.org/philosophy/opposing-drm.en.html) and [Examples of proprietary DRM](https://www.gnu.org/proprietary/proprietary-drm.en.html)).
