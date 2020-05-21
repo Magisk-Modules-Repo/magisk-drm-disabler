@@ -1,4 +1,10 @@
 v0.3.0
+Beta release -- use at your own responsibility
+Added framework .jars and .odex/.vdex files for removal
+Added init scripts to be removed
+Added lib info to CONTRIBUTING.md
+Added more DRM libs for removal
+Added a permissions file and vendor directories for removal
 
 ---
 

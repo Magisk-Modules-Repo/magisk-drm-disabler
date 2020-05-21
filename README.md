@@ -15,33 +15,41 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 **List of replaced files:**
 ```
 system
-├── system/bin
-│   ├── system/bin/drmserver
-│   ├── system/bin/lgdrmserver
-│   └── system/bin/mediadrmserver
-├── system/etc
-│   ├── system/etc/init
-│   │   ├── system/etc/init/drmserver.rc
-│   │   └── system/etc/init/mediardmserver.rc
-│   ├── system/etc/move_widevine_data.sh
-│   └── system/etc/permissions
-│       └── system/etc/permissions/com.google.widevine.software.drm.xml
-├── system/lib
-│   └── system/lib/libdrmframework_jni.so
-├── system/lib64
-│   └── system/lib64/libdrmframework_jni.so
-└── system/vendor
-    ├── system/vendor/bin
-    │   └── system/vendor/bin/hw
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.0-service
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.1-service.clearkey
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.2-service.clearkey
-    │       ├── system/vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-    │       └── system/vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service
-    └── system/vendor/lib
-        └── system/vendor/lib/liboemcrypto.so
+├── bin/
+│   ├── drmserver*
+│   ├── lgdrmserver*
+│   └── mediadrmserver*
+├── etc/
+│   ├── init/
+│   │   ├── drmserver.rc*
+│   │   └── mediardmserver.rc*
+│   ├── move_widevine_data.sh*
+│   └── permissions/
+│       └── com.google.widevine.software.drm.xml
+├── framework/
+│   ├── com.android.mediadrm.signer.jar*
+│   └── oat/
+│       ├── arm/
+│       │   ├── com.android.mediadrm.signer.odex
+│       │   └── com.android.mediadrm.signer.vdex
+│       └── arm64/
+│           └── com.android.mediadrm.signer.odex
+├── lib/
+│   └── libdrmframework_jni.so
+├── lib64/
+│   └── libdrmframework_jni.so
+└── vendor/
+    ├── bin/
+    │   └── hw/
+    │       ├── android.hardware.drm@1.0-service*
+    │       ├── android.hardware.drm@1.0-service.widevine*
+    │       ├── android.hardware.drm@1.1-service.clearkey*
+    │       ├── android.hardware.drm@1.1-service.widevine*
+    │       ├── android.hardware.drm@1.2-service.clearkey*
+    │       ├── android.hardware.drm@1.2-service.widevine*
+    │       └── vendor.oneplus.hardware.drmkey@1.0-service*
+    └── lib/
+        └── liboemcrypto.so
 
 firmware
 └── image/
