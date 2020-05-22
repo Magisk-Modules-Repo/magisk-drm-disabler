@@ -12,7 +12,7 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 
 [XDA Support thread](https://forum.xda-developers.com/apps/magisk/module-magisk-drm-disabler-t4070117)
 
-**List of replaced files:**
+**List of replaced files in FULL mode:**
 ```
 system
 ├── bin/
@@ -73,12 +73,14 @@ persist-lg
 ```
 Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until a workaround is found. They still appear in the list so that users can remove them by themselves, although this is risky.
 
-**List of replaced directories:**
+**List of replaced directories in FULL mode:**
 ```
 /system/app/LGDrm
 /system/etc/drm
 /system/lib/drm
 /system/lib64/drm
+/system/vendor/lib/mediacas
+/system/vendor/lib64/mediacas
 /system/vendor/lib/mediadrm
 /system/vendor/lib64/mediadrm
 /data/drm
