@@ -1,6 +1,10 @@
-# Magisk DRM Disabler  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Magisk DRM Disabler (MDD)  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 If you're on GitHub and want to create a Pull/Merge Request, head to this project's [GitLab repo.](https://gitlab.com/Atrate/magisk-drm-disabler/)
+
+## READ THIS FIRST
+
+Some (quite a few) users have reported various breakages due to this module. It is not really possible to fix them, since it seems that DRM might be integrated to tightly into some ROMs. You have been warned.
 
 ## Description
 
@@ -11,25 +15,40 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 **List of replaced files:**
 ```
 system
-├── bin
-│   ├── drmserver
-│   ├── lgdrmserver
-│   └── mediadrmserver
-├── etc
-│   └── init
-│       ├── drmserver.rc
-│       └── mediardmserver.rc
-└── vendor
-    ├── bin
-    │   └── hw
-    │       ├── android.hardware.drm@1.0-service
-    │       ├── android.hardware.drm@1.0-service.widevine
-    │       ├── android.hardware.drm@1.1-service.clearkey
-    │       ├── android.hardware.drm@1.1-service.widevine
-    │       ├── android.hardware.drm@1.2-service.clearkey
-    │       ├── android.hardware.drm@1.2-service.widevine
-    │       └── vendor.oneplus.hardware.drmkey@1.0-service
-    └── lib
+├── bin/
+│   ├── drmserver*
+│   ├── lgdrmserver*
+│   └── mediadrmserver*
+├── etc/
+│   ├── init/
+│   │   ├── drmserver.rc*
+│   │   └── mediardmserver.rc*
+│   ├── move_widevine_data.sh*
+│   └── permissions/
+│       └── com.google.widevine.software.drm.xml
+├── framework/
+│   ├── com.android.mediadrm.signer.jar*
+│   └── oat/
+│       ├── arm/
+│       │   ├── com.android.mediadrm.signer.odex
+│       │   └── com.android.mediadrm.signer.vdex
+│       └── arm64/
+│           └── com.android.mediadrm.signer.odex
+├── lib/
+│   └── libdrmframework_jni.so
+├── lib64/
+│   └── libdrmframework_jni.so
+└── vendor/
+    ├── bin/
+    │   └── hw/
+    │       ├── android.hardware.drm@1.0-service*
+    │       ├── android.hardware.drm@1.0-service.widevine*
+    │       ├── android.hardware.drm@1.1-service.clearkey*
+    │       ├── android.hardware.drm@1.1-service.widevine*
+    │       ├── android.hardware.drm@1.2-service.clearkey*
+    │       ├── android.hardware.drm@1.2-service.widevine*
+    │       └── vendor.oneplus.hardware.drmkey@1.0-service*
+    └── lib/
         └── liboemcrypto.so
 
 firmware
@@ -60,6 +79,8 @@ Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until 
 /system/etc/drm
 /system/lib/drm
 /system/lib64/drm
+/system/vendor/lib/mediadrm
+/system/vendor/lib64/mediadrm
 /data/drm
 /data/mediadrm
 /data/vendor/mediadrm
@@ -87,7 +108,7 @@ OR
 ### THIS IS NOT A MODULE THAT WILL HELP YOU BYPASS DRM PROTECTION
 Quite the contrary, it will make you unable to watch any DRM-restricted content.
 
-### This is an alpha release
+### This is a beta release
 I am not responsible for any damage done to your device by this module, so flash at your of discretion
 
 ### LOOKING FOR TESTERS!

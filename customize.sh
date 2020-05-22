@@ -3,6 +3,8 @@ REPLACE="
 /system/etc/drm
 /system/lib/drm
 /system/lib64/drm
+/system/vendor/lib/mediadrm
+/system/vendor/lib64/mediadrm
 /data/drm
 /data/mediadrm
 /data/vendor/mediadrm
