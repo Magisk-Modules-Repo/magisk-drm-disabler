@@ -25,6 +25,7 @@ system
 │   │   └── mediardmserver.rc*
 │   ├── move_widevine_data.sh*
 │   └── permissions/
+│       ├── com.android.mediadrm.signer.xml
 │       └── com.google.widevine.software.drm.xml
 ├── framework/
 │   ├── com.android.mediadrm.signer.jar*
@@ -35,7 +36,8 @@ system
 │       └── arm64/
 │           └── com.android.mediadrm.signer.odex
 ├── lib/
-│   └── libdrmframework_jni.so
+│   ├── libdrmframework_jni.so
+│   └── libstagefright_hwextendedmediadrm.so
 ├── lib64/
 │   └── libdrmframework_jni.so
 └── vendor/
