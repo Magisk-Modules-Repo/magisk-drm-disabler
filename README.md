@@ -12,6 +12,30 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 
 [XDA Support thread](https://forum.xda-developers.com/apps/magisk/module-magisk-drm-disabler-t4070117)
 
+
+**List of replaced files in LIGHT mode:**
+```
+system
+├── bin/
+│   ├── drmserver*
+│   ├── lgdrmserver*
+│   └── mediadrmserver*
+└── vendor/
+    └── lib/
+        └── liboemcrypto.so
+```
+
+**List of replaced directories in LIGHT mode:**
+```
+/system/app/LGDrm
+/system/etc/drm
+/data/drm
+/data/mediadrm
+/data/vendor/mediadrm
+/data/data/.drm
+/data/.dcmdrm
+```
+
 **List of replaced files in FULL mode:**
 ```
 system
