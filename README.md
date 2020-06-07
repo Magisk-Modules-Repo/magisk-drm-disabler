@@ -52,28 +52,7 @@ system
     │       └── vendor.oneplus.hardware.drmkey@1.0-service*
     └── lib/
         └── liboemcrypto.so
-
-firmware
-└── image/
-    ├── widevine.b01*
-    ├── widevine.b02*
-    ├── widevine.b03*
-    ├── widevine.b04*
-    ├── widevine.b05*
-    ├── widevine.b06*
-    └── widevine.mdt*
-
-persist-lg
-└── firmware/
-    ├── widevine.b01*
-    ├── widevine.b02*
-    ├── widevine.b03*
-    ├── widevine.b04*
-    ├── widevine.b05*
-    ├── widevine.b06*
-    └── widevine.mdt*
 ```
-Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until a workaround is found. They still appear in the list so that users can remove them by themselves, although this is risky.
 
 **List of replaced directories in FULL mode:**
 ```
@@ -90,11 +69,6 @@ Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until 
 /data/vendor/mediadrm
 /data/data/.drm
 /data/.dcmdrm
-/efs/drm
-/persist/drm
-/persist-lg/lgdrm
-/persist-lg/widevine
-/persist-lg/data/widevine
 ```
 
 ## Installation

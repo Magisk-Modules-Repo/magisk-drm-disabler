@@ -47,9 +47,4 @@ REPLACE="
 /data/vendor/mediadrm
 /data/data/.drm
 /data/.dcmdrm
-/efs/drm
-/persist/drm
-/persist-lg/lgdrm
-/persist-lg/widevine
-/persist-lg/data/widevine
 "

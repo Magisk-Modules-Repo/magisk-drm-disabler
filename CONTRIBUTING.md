@@ -18,3 +18,35 @@ libdrmframework.so
 libmediardm.so
 libmediardmmetrics_lite.so
 ```
+
+Files used for DRM that cannot yet be replaced:
+```
+firmware
+└── image/
+    ├── widevine.b01*
+    ├── widevine.b02*
+    ├── widevine.b03*
+    ├── widevine.b04*
+    ├── widevine.b05*
+    ├── widevine.b06*
+    └── widevine.mdt*
+
+persist-lg
+└── firmware/
+    ├── widevine.b01*
+    ├── widevine.b02*
+    ├── widevine.b03*
+    ├── widevine.b04*
+    ├── widevine.b05*
+    ├── widevine.b06*
+    └── widevine.mdt*
+```
+
+Directories used for DRM that cannot yet be replaced:
+```
+/efs/drm
+/persist/drm
+/persist-lg/lgdrm
+/persist-lg/widevine
+/persist-lg/data/widevine
+```
