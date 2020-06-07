@@ -118,6 +118,7 @@ If you're interested in helping the project by being a tester, please refer to [
 
 ## Credits
 topjohnwu for magisk
+Jman420 for [volume key input](https://github.com/Jman420/magisk_selinux_manager/blob/develop/common/install.sh)
 
 ## [Changelog](./CHANGELOG)
 
