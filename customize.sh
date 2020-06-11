@@ -32,19 +32,43 @@ else
     FUNC=false
 fi
 
+# Ask user for MDD mode
+# ---------------------
+ui_print " "
+ui_print "--- Select DRM removal mode ---"
+ui_print "  Vol+ = FULL  "
+ui_print "  Vol- = LIGHT (use if FULL causes issues)  "
+ui_print " "
 
-REPLACE="
-/system/app/LGDrm
-/system/etc/drm
-/system/lib/drm
-/system/lib64/drm
-/system/vendor/lib/mediacas
-/system/vendor/lib64/mediacas
-/system/vendor/lib/mediadrm
-/system/vendor/lib64/mediadrm
-/data/drm
-/data/mediadrm
-/data/vendor/mediadrm
-/data/data/.drm
-/data/.dcmdrm
-"
+# Remove directories and set REPLACE according to mode
+# ----------------------------------------------------
+if "$FUNC"; then
+    ui_print "Selected: LIGHT mode"
+    find "$MODPATH/system" -mindepth 1 ! -regex '^'"$MODPATH"'/system/bin\(/.*\)?' ! -regex '^'"$MODPATH"'/system/vendor/lib\(/.*\)?' -delete 2>/dev/null
+    REPLACE="
+    /system/app/LGDrm
+    /system/etc/drm
+    /data/drm
+    /data/mediadrm
+    /data/vendor/mediadrm
+    /data/data/.drm
+    /data/.dcmdrm
+    "
+else
+    ui_print "Selected: FULL mode"
+    REPLACE="
+    /system/app/LGDrm
+    /system/etc/drm
+    /system/lib/drm
+    /system/lib64/drm
+    /system/vendor/lib/mediacas
+    /system/vendor/lib64/mediacas
+    /system/vendor/lib/mediadrm
+    /system/vendor/lib64/mediadrm
+    /data/drm
+    /data/mediadrm
+    /data/vendor/mediadrm
+    /data/data/.drm
+    /data/.dcmdrm
+    "
+fi
