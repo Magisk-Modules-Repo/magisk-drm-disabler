@@ -13,7 +13,7 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 [XDA Support thread](https://forum.xda-developers.com/apps/magisk/module-magisk-drm-disabler-t4070117)
 
 
-**List of replaced files in LIGHT mode:**
+**List of files replaced in LIGHT mode:**
 ```
 system
 ├── bin/
@@ -25,7 +25,7 @@ system
         └── liboemcrypto.so
 ```
 
-**List of replaced directories in LIGHT mode:**
+**List of directories replaced in LIGHT mode:**
 ```
 /system/app/LGDrm
 /system/etc/drm
@@ -36,7 +36,7 @@ system
 /data/.dcmdrm
 ```
 
-**List of replaced files in FULL mode:**
+**List of files replaced in FULL mode:**
 ```
 system
 ├── bin/
@@ -78,7 +78,7 @@ system
         └── liboemcrypto.so
 ```
 
-**List of replaced directories in FULL mode:**
+**List of directories replaced in FULL mode:**
 ```
 /system/app/LGDrm
 /system/etc/drm
