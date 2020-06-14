@@ -4,7 +4,7 @@ If you're on GitHub and want to create a Pull/Merge Request, head to this projec
 
 ## READ THIS FIRST
 
-Some (quite a few) users have reported various breakages due to this module. It is not really possible to fix them, since it seems that DRM might be integrated to tightly into some ROMs. You have been warned.
+Some (quite a few) users have reported various breakages due to this module. It is not really possible to fix them, since it seems that DRM might be integrated to tightly into some ROMs. If that happens, use LIGHT mode instead of FULL mode during installation.
 
 ## Description
 
@@ -118,8 +118,8 @@ Quite the contrary, it will make you unable to watch any DRM-restricted content.
 ### Disclaimer
 I am not responsible for any damage done to your device by this module, so flash at your of discretion
 
-### LOOKING FOR TESTERS!
-If you're interested in helping the project by being a tester, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
+### LOOKING FOR VOLUNTEERS!
+If you're interested in helping the project, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Credits
 topjohnwu for magisk
