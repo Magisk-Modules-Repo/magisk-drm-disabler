@@ -1,3 +1,10 @@
+v1.0.0
+Added module modes — use FULL for a thorough removal, use LIGHT when FULL causes issues
+Added another permissions file
+Added some more libs
+---
+
+
 v0.3.0
 Beta release -- use at your own responsibility
 Added framework .jars and .odex/.vdex files for removal

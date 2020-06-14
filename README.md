@@ -4,7 +4,7 @@ If you're on GitHub and want to create a Pull/Merge Request, head to this projec
 
 ## READ THIS FIRST
 
-Some (quite a few) users have reported various breakages due to this module. It is not really possible to fix them, since it seems that DRM might be integrated to tightly into some ROMs. You have been warned.
+Some (quite a few) users have reported various breakages due to this module. It is not really possible to fix them, since it seems that DRM might be integrated to tightly into some ROMs. If that happens, use LIGHT mode instead of FULL mode during installation.
 
 ## Description
 
@@ -12,7 +12,36 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 
 [XDA Support thread](https://forum.xda-developers.com/apps/magisk/module-magisk-drm-disabler-t4070117)
 
-**List of replaced files:**
+
+**List of files replaced in LIGHT mode:**
+```
+system
+└── vendor/
+    ├── bin/
+    │   └── hw/
+    │       ├── android.hardware.drm@1.0-service*
+    │       ├── android.hardware.drm@1.0-service.widevine*
+    │       ├── android.hardware.drm@1.1-service.clearkey*
+    │       ├── android.hardware.drm@1.1-service.widevine*
+    │       ├── android.hardware.drm@1.2-service.clearkey*
+    │       ├── android.hardware.drm@1.2-service.widevine*
+    │       └── vendor.oneplus.hardware.drmkey@1.0-service*
+    └── lib/
+        └── liboemcrypto.so
+```
+
+**List of directories replaced in LIGHT mode:**
+```
+/system/app/LGDrm
+/system/etc/drm
+/data/drm
+/data/mediadrm
+/data/vendor/mediadrm
+/data/data/.drm
+/data/.dcmdrm
+```
+
+**List of files replaced in FULL mode:**
 ```
 system
 ├── bin/
@@ -25,6 +54,7 @@ system
 │   │   └── mediardmserver.rc*
 │   ├── move_widevine_data.sh*
 │   └── permissions/
+│       ├── com.android.mediadrm.signer.xml
 │       └── com.google.widevine.software.drm.xml
 ├── framework/
 │   ├── com.android.mediadrm.signer.jar*
@@ -35,7 +65,8 @@ system
 │       └── arm64/
 │           └── com.android.mediadrm.signer.odex
 ├── lib/
-│   └── libdrmframework_jni.so
+│   ├── libdrmframework_jni.so
+│   └── libstagefright_hwextendedmediadrm.so
 ├── lib64/
 │   └── libdrmframework_jni.so
 └── vendor/
@@ -50,35 +81,16 @@ system
     │       └── vendor.oneplus.hardware.drmkey@1.0-service*
     └── lib/
         └── liboemcrypto.so
-
-firmware
-└── image/
-    ├── widevine.b01*
-    ├── widevine.b02*
-    ├── widevine.b03*
-    ├── widevine.b04*
-    ├── widevine.b05*
-    ├── widevine.b06*
-    └── widevine.mdt*
-
-persist-lg
-└── firmware/
-    ├── widevine.b01*
-    ├── widevine.b02*
-    ├── widevine.b03*
-    ├── widevine.b04*
-    ├── widevine.b05*
-    ├── widevine.b06*
-    └── widevine.mdt*
 ```
-Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until a workaround is found. They still appear in the list so that users can remove them by themselves, although this is risky.
 
-**List of replaced directories:**
+**List of directories replaced in FULL mode:**
 ```
 /system/app/LGDrm
 /system/etc/drm
 /system/lib/drm
 /system/lib64/drm
+/system/vendor/lib/mediacas
+/system/vendor/lib64/mediacas
 /system/vendor/lib/mediadrm
 /system/vendor/lib64/mediadrm
 /data/drm
@@ -86,11 +98,6 @@ Please note that files in firmware/ and persist-lg/ are NOT YET replaced, until 
 /data/vendor/mediadrm
 /data/data/.drm
 /data/.dcmdrm
-/efs/drm
-/persist/drm
-/persist-lg/lgdrm
-/persist-lg/widevine
-/persist-lg/data/widevine
 ```
 
 ## Installation
@@ -101,21 +108,23 @@ OR
 1. Download the module from the releases
 2. Flash the module through Magisk Manager or TWRP/OrangeFox
 
-### Grab the newest release on [GitLab](https://gitlab.com/Atrate/magisk-drm-disabler/releases) or [GitHub](https://github.com/Magisk-Modules-Repo/magisk-drm-disabler/releases)
+### Grab the newest release on [GitLab](https://gitlab.com/Atrate/magisk-drm-disabler/-/releases) or [GitHub](https://github.com/Magisk-Modules-Repo/magisk-drm-disabler/releases)
 
 ---
 
 ### THIS IS NOT A MODULE THAT WILL HELP YOU BYPASS DRM PROTECTION
 Quite the contrary, it will make you unable to watch any DRM-restricted content.
 
-### This is a beta release
+### Disclaimer
 I am not responsible for any damage done to your device by this module, so flash at your of discretion
 
-### LOOKING FOR TESTERS!
-If you're interested in helping the project by being a tester, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
+### LOOKING FOR VOLUNTEERS!
+If you're interested in helping the project, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Credits
 topjohnwu for magisk
+
+Jman420 for [volume key input](https://github.com/Jman420/magisk_selinux_manager/blob/develop/common/install.sh)
 
 ## [Changelog](./CHANGELOG)
 
