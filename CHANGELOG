@@ -1,4 +1,5 @@
 v1.0.0
+Added module modes — use FULL for a thorough removal, use LIGHT when FULL causes issues
 Added another permissions file
 Added some more libs
 ---
