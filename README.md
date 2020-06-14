@@ -16,11 +16,16 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 **List of files replaced in LIGHT mode:**
 ```
 system
-├── bin/
-│   ├── drmserver*
-│   ├── lgdrmserver*
-│   └── mediadrmserver*
 └── vendor/
+    ├── bin/
+    │   └── hw/
+    │       ├── android.hardware.drm@1.0-service*
+    │       ├── android.hardware.drm@1.0-service.widevine*
+    │       ├── android.hardware.drm@1.1-service.clearkey*
+    │       ├── android.hardware.drm@1.1-service.widevine*
+    │       ├── android.hardware.drm@1.2-service.clearkey*
+    │       ├── android.hardware.drm@1.2-service.widevine*
+    │       └── vendor.oneplus.hardware.drmkey@1.0-service*
     └── lib/
         └── liboemcrypto.so
 ```
