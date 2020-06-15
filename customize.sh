@@ -50,11 +50,6 @@ if "$FUNC"; then
     REPLACE="
     /system/app/LGDrm
     /system/etc/drm
-    /data/drm
-    /data/mediadrm
-    /data/vendor/mediadrm
-    /data/data/.drm
-    /data/.dcmdrm
     "
 else
     ui_print "Selected: FULL mode"
@@ -67,10 +62,5 @@ else
     /system/vendor/lib64/mediacas
     /system/vendor/lib/mediadrm
     /system/vendor/lib64/mediadrm
-    /data/drm
-    /data/mediadrm
-    /data/vendor/mediadrm
-    /data/data/.drm
-    /data/.dcmdrm
     "
 fi
