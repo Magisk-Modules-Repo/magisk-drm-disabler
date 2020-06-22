@@ -4,7 +4,6 @@
 # -------------------------------------------------------------------------------------------------------
 for DIR in "/data/drm" "/data/mediadrm" "/data/vendor/mediadrm" "/data/data/.drm" "/data/.dcmdrm"
 do
-    echo "Removing $DIR"
     rm -r "$DIR" 2>/dev/null
 done
 exit 0
