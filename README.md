@@ -100,6 +100,8 @@ system
 /data/.dcmdrm
 ```
 
+**Note:** Directiories in /data are simply removed, not replaced, due to a limitation within Magisk.
+
 ## Installation
 1. Install through Magisk Manager 
 
