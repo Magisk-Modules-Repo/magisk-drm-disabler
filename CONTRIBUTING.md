@@ -17,7 +17,6 @@ if true
 then
     echo "false"
 fi
-
 ```
 
 ## Testers welcome!
