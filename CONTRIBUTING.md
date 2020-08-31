@@ -3,6 +3,8 @@ You're welcome to create pull requests and issues for bug reports or feature req
 If creating a PR, please make sure to do it on GitLab.
 
 ## Code style
+Please use 4 spaces for indentation.
+
 When writing code, please put opening and closing brackets in separate lines, like this:
 ```
 int std::foo()
