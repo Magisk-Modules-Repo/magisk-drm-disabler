@@ -1,6 +1,7 @@
-# Magisk DRM Disabler (MDD)  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Magisk DRM Disabler (MDD) 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) 
 
-If you're on GitHub and want to create a Pull/Merge Request, head to this project's [GitLab repo.](https://gitlab.com/Atrate/magisk-drm-disabler/)
+If you're on GitHub and want to create a Pull/Merge Request, head to this project's [GitLab repo](https://gitlab.com/Atrate/magisk-drm-disabler/).
 
 ## READ THIS FIRST
 
@@ -15,19 +16,19 @@ A Magisk module designed to disable DRM (Digital Restrictions Management) comple
 
 **List of files replaced in LIGHT mode:**
 ```
-system
-└── vendor/
-    ├── bin/
-    │   └── hw/
-    │       ├── android.hardware.drm@1.0-service*
-    │       ├── android.hardware.drm@1.0-service.widevine*
-    │       ├── android.hardware.drm@1.1-service.clearkey*
-    │       ├── android.hardware.drm@1.1-service.widevine*
-    │       ├── android.hardware.drm@1.2-service.clearkey*
-    │       ├── android.hardware.drm@1.2-service.widevine*
-    │       └── vendor.oneplus.hardware.drmkey@1.0-service*
-    └── lib/
-        └── liboemcrypto.so
+system/vendor
+├── bin/
+│   └── hw/
+│       ├── android.hardware.cas@1.1-service*
+│       ├── android.hardware.drm@1.0-service*
+│       ├── android.hardware.drm@1.0-service.widevine*
+│       ├── android.hardware.drm@1.1-service.clearkey*
+│       ├── android.hardware.drm@1.1-service.widevine*
+│       ├── android.hardware.drm@1.2-service.clearkey*
+│       ├── android.hardware.drm@1.2-service.widevine*
+│       └── vendor.oneplus.hardware.drmkey@1.0-service*
+└── lib/
+    └── liboemcrypto.so
 ```
 
 **List of directories replaced in LIGHT mode:**
@@ -72,6 +73,7 @@ system
 └── vendor/
     ├── bin/
     │   └── hw/
+    │       ├── android.hardware.cas@1.1-service*
     │       ├── android.hardware.drm@1.0-service*
     │       ├── android.hardware.drm@1.0-service.widevine*
     │       ├── android.hardware.drm@1.1-service.clearkey*
@@ -103,12 +105,12 @@ system
 **Note:** Directiories in /data are simply removed, not replaced, due to a limitation within Magisk.
 
 ## Installation
-1. Install through Magisk Manager 
+1. Install through Magisk Manager.
 
 OR
 
-1. Download the module from the releases
-2. Flash the module through Magisk Manager or TWRP/OrangeFox
+1. Download the module from the releases;
+2. Flash the module through Magisk Manager or TWRP/OrangeFox.
 
 ### Grab the newest release on [GitLab](https://gitlab.com/Atrate/magisk-drm-disabler/-/releases) or [GitHub](https://github.com/Magisk-Modules-Repo/magisk-drm-disabler/releases)
 
@@ -118,15 +120,14 @@ OR
 Quite the contrary, it will make you unable to watch any DRM-restricted content.
 
 ### Disclaimer
-I am not responsible for any damage done to your device by this module, so flash at your of discretion
+I am not responsible for any damage done to your device by this module, so flash at your of discretion.
 
 ### LOOKING FOR VOLUNTEERS!
-If you're interested in helping the project, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
+If you're interested in helping the project, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Credits
-topjohnwu for magisk
-
-Jman420 for [volume key input](https://github.com/Jman420/magisk_selinux_manager/blob/develop/common/install.sh)
+ - topjohnwu for Magisk;
+ - Jman420 for [volume key input](https://github.com/Jman420/magisk_selinux_manager/blob/develop/common/install.sh).
 
 ## [Changelog](./CHANGELOG)
 
