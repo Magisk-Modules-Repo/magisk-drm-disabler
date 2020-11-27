@@ -81,8 +81,13 @@ system
     │       ├── android.hardware.drm@1.2-service.clearkey*
     │       ├── android.hardware.drm@1.2-service.widevine*
     │       └── vendor.oneplus.hardware.drmkey@1.0-service*
-    └── lib/
-        └── liboemcrypto.so
+    ├── lib/
+    │   └── liboemcrypto.so
+    └── lib64/
+        ├── lib-sec-disp.so
+        ├── libSecureUILib.so
+        ├── libsecureui.so
+        └── libsecureui_svcsock.so
 ```
 
 **List of directories replaced in FULL mode:**

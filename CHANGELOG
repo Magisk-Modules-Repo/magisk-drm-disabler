@@ -1,3 +1,15 @@
+v1.3.0
+Added several DRM-related files
+```
+/system/vendor/lib64/lib-sec-disp.so
+/system/vendor/lib64/libSecureUILib.so
+/system/vendor/lib64/libsecureui.so
+/system/vendor/lib64/libsecureui_svcsock.so
+/system/vendor/lib/liboemcrypto.so
+```
+
+---
+
 v1.2.0
 Added another DRM-related file (CAS)
 
