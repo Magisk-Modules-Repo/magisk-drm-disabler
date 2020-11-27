@@ -27,7 +27,7 @@ If you're interested in becoming a tester, please send me an e-mail or PM with y
 
 If trying to remove DRM libs, please remember that some libraries relate to Digital Restrictions Management while some refer to Direct Rendering Management. Removing the latter will cause graphics breakages through the whole system and possibly bootloops.
 
-## Libraries that have been tested and cause a bootloop:
+## Libraries that have been tested and cause a bootloop (remember the above notice — Rendering vs Restrictions):
 ```
 android.hardware.drm@1.0.so
 android.hardware.drm@1.1.so
