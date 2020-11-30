@@ -155,7 +155,7 @@ If you're interested in helping the project, please refer to [CONTRIBUTING.md](.
  - topjohnwu for Magisk;
  - Jman420 for [volume key input](https://github.com/Jman420/magisk_selinux_manager/blob/develop/common/install.sh).
 
-## [Changelog](./CHANGELOG)
+## [Changelog](./CHANGELOG.md)
 
 ## License
 This project is licensed under the [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html).
