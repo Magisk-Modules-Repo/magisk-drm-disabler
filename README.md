@@ -50,6 +50,15 @@ system
 │   ├── lgdrmserver*
 │   └── mediadrmserver*
 ├── etc/
+│   ├── firmware/
+│   │   ├── dxhdcp2.b00
+│   │   ├── dxhdcp2.b01
+│   │   ├── dxhdcp2.b02
+│   │   ├── dxhdcp2.b03
+│   │   ├── dxhdcp2.b04
+│   │   ├── dxhdcp2.b05
+│   │   ├── dxhdcp2.b06
+│   │   └── dxhdcp2.mdt
 │   ├── init/
 │   │   ├── drmserver.rc*
 │   │   └── mediardmserver.rc*
@@ -81,6 +90,15 @@ system
     │       ├── android.hardware.drm@1.2-service.clearkey*
     │       ├── android.hardware.drm@1.2-service.widevine*
     │       └── vendor.oneplus.hardware.drmkey@1.0-service*
+    ├── firmware/
+    │   ├── widevine.b00
+    │   ├── widevine.b01
+    │   ├── widevine.b02
+    │   ├── widevine.b03
+    │   ├── widevine.b04
+    │   ├── widevine.b05
+    │   ├── widevine.b06
+    │   └── widevine.mdt
     ├── lib/
     │   ├── libmm-hdcpmgr.so
     │   ├── liboemcrypto.so

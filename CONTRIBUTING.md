@@ -38,10 +38,18 @@ libmediardm.so
 libmediardmmetrics_lite.so
 ```
 
-Files used for DRM that cannot yet be replaced:
+These DRM-related files cannot be natively replaced. Instead, the symlinks pointing to them are replaced in `/system/etc/firmware` and `/system/vendor/firmware`.
 ```
 firmware
 └── image/
+    ├── dxhdcp2.b00
+    ├── dxhdcp2.b01
+    ├── dxhdcp2.b02
+    ├── dxhdcp2.b03
+    ├── dxhdcp2.b04
+    ├── dxhdcp2.b05
+    ├── dxhdcp2.b06
+    ├── dxhdcp2.mdt
     ├── widevine.b01*
     ├── widevine.b02*
     ├── widevine.b03*
