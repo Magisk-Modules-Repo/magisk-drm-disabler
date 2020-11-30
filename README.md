@@ -82,8 +82,11 @@ system
     │       ├── android.hardware.drm@1.2-service.widevine*
     │       └── vendor.oneplus.hardware.drmkey@1.0-service*
     ├── lib/
-    │   └── liboemcrypto.so
+    │   ├── libmm-hdcpmgr.so
+    │   ├── liboemcrypto.so
+    │   └── libwvhidl.so
     └── lib64/
+        ├── libmm-hdcpmgr.so
         ├── lib-sec-disp.so
         ├── libSecureUILib.so
         ├── libsecureui.so

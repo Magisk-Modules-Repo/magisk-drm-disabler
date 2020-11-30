@@ -57,7 +57,7 @@ if "$FUNC"; then
     ui_print "Selected: LIGHT mode"
     #   find "$MODPATH/system" -mindepth 1 ! -regex '^'"$MODPATH"'/system/bin\(/.*\)?' ! -regex '^'"$MODPATH"'/system/vendor/lib\(/.*\)?' -delete 2>/dev/null
     #   The above would be a "smart" way of doing what's going to be done below. It is unreliable, though, since the find binary in Android seems to be very old.
-    rm -r "$MODPATH/system/etc" "$MODPATH/system/bin" "$MODPATH/system/framework" "$MODPATH/system/lib" "$MODPATH/system/lib64" "$MODPATH/system/vendor/lib64"
+    rm -r "$MODPATH/system/etc" "$MODPATH/system/bin" "$MODPATH/system/framework" "$MODPATH/system/lib" "$MODPATH/system/lib64" "$MODPATH/system/vendor/lib64" "$MODPATH/system/vendor/lib/libmm-hdcpmgr.so" "$MODPATH/system/vendor/lib/libwvhidl.so"
     REPLACE="
     /system/app/LGDrm
     /system/etc/drm
