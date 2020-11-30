@@ -1,11 +1,35 @@
 v1.3.0
-Added several DRM-related files
+Added several DRM-related files:
 ```
+/system/vendor/lib/libmm-hdcpmgr.so
+/system/vendor/lib/liboemcrypto.so
+/system/vendor/lib/libwvhidl.so
 /system/vendor/lib64/lib-sec-disp.so
 /system/vendor/lib64/libSecureUILib.so
+/system/vendor/lib64/libmm-hdcpmgr.so
 /system/vendor/lib64/libsecureui.so
 /system/vendor/lib64/libsecureui_svcsock.so
-/system/vendor/lib/liboemcrypto.so
+```
+
+Added firmware DRM blobs:
+```
+/system/etc/firmware/dxhdcp2.b00
+/system/etc/firmware/dxhdcp2.b01
+/system/etc/firmware/dxhdcp2.b02
+/system/etc/firmware/dxhdcp2.b03
+/system/etc/firmware/dxhdcp2.b04
+/system/etc/firmware/dxhdcp2.b05
+/system/etc/firmware/dxhdcp2.b06
+/system/etc/firmware/dxhdcp2.mdt
+
+/system/vendor/firmware/widevine.b00
+/system/vendor/firmware/widevine.b01
+/system/vendor/firmware/widevine.b02
+/system/vendor/firmware/widevine.b03
+/system/vendor/firmware/widevine.b04
+/system/vendor/firmware/widevine.b05
+/system/vendor/firmware/widevine.b06
+/system/vendor/firmware/widevine.mdt
 ```
 
 ---
