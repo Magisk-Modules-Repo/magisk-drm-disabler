@@ -50,6 +50,15 @@ system
 │   ├── lgdrmserver*
 │   └── mediadrmserver*
 ├── etc/
+│   ├── firmware/
+│   │   ├── dxhdcp2.b00
+│   │   ├── dxhdcp2.b01
+│   │   ├── dxhdcp2.b02
+│   │   ├── dxhdcp2.b03
+│   │   ├── dxhdcp2.b04
+│   │   ├── dxhdcp2.b05
+│   │   ├── dxhdcp2.b06
+│   │   └── dxhdcp2.mdt
 │   ├── init/
 │   │   ├── drmserver.rc*
 │   │   └── mediardmserver.rc*
@@ -81,8 +90,25 @@ system
     │       ├── android.hardware.drm@1.2-service.clearkey*
     │       ├── android.hardware.drm@1.2-service.widevine*
     │       └── vendor.oneplus.hardware.drmkey@1.0-service*
-    └── lib/
-        └── liboemcrypto.so
+    ├── firmware/
+    │   ├── widevine.b00
+    │   ├── widevine.b01
+    │   ├── widevine.b02
+    │   ├── widevine.b03
+    │   ├── widevine.b04
+    │   ├── widevine.b05
+    │   ├── widevine.b06
+    │   └── widevine.mdt
+    ├── lib/
+    │   ├── libmm-hdcpmgr.so
+    │   ├── liboemcrypto.so
+    │   └── libwvhidl.so
+    └── lib64/
+        ├── libmm-hdcpmgr.so
+        ├── lib-sec-disp.so
+        ├── libSecureUILib.so
+        ├── libsecureui.so
+        └── libsecureui_svcsock.so
 ```
 
 **List of directories replaced in FULL mode:**
@@ -129,7 +155,7 @@ If you're interested in helping the project, please refer to [CONTRIBUTING.md](.
  - topjohnwu for Magisk;
  - Jman420 for [volume key input](https://github.com/Jman420/magisk_selinux_manager/blob/develop/common/install.sh).
 
-## [Changelog](./CHANGELOG)
+## [Changelog](./CHANGELOG.md)
 
 ## License
 This project is licensed under the [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html).
