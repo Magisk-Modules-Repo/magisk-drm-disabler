@@ -1,3 +1,7 @@
+v1.4.0
+
+---
+
 v1.3.0
 Added several DRM-related files:
 ```
