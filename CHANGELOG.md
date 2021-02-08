@@ -1,3 +1,8 @@
+v1.3.1
+Remove `libdrmframework_jni.so` as replacing it caused Media Storage not to work on A11
+
+---
+
 v1.3.0
 Added several DRM-related files:
 ```
