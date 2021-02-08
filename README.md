@@ -75,10 +75,7 @@ system
 │       └── arm64/
 │           └── com.android.mediadrm.signer.odex
 ├── lib/
-│   ├── libdrmframework_jni.so
 │   └── libstagefright_hwextendedmediadrm.so
-├── lib64/
-│   └── libdrmframework_jni.so
 └── vendor/
     ├── bin/
     │   └── hw/
